@@ -1,0 +1,144 @@
+ody {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 20px auto;
+}
+h1, h2 {
+    text-align: center;
+    color: #005f99;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid: white;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #005f99;
+    color: white;
+}
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #005f99;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btn:hover {
+    background-color: #004a73;
+}
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e6f7ff;
+    border-radius: 5px;
+}
+.marquee {
+    background-color: rgb(39, 161, 213);
+    color: white;
+    padding: 40px;
+    font-size: 38px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.navbar {
+    background-color: #005f99;
+    padding: 10px;
+    text-align: center;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+.definition {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+}
+.im{
+    width:250px;
+    height: 250px;
+    
+}
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+form input {
+    padding: 8px;
+    width: 200px;
+}
+
+#tableContainer {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #005f99;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #005f99;
+    color: white;
+}
+.result-section {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    display: none; /* Initially hide the section */
+}
+
+.result-section.visible {
+    display: block;
+}

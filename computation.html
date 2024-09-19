@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse Computation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Marquee -->
+<marquee loop="infinity" scrollamount="30" behavior="scroll" direction="left" class="marquee">Traverse Computation Tool</marquee>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <ul>
+        <li><a href="traversing.html">Traversing</a></li>
+        <li><a href="computation.html">Computation</a></li>
+    </ul>
+</nav>
+
+<!-- Input Section -->
+<div class="container">
+    <h1>Traverse Computation</h1>
+    <form id="traverseForm">
+        <div>
+            <label for="easting1">Easting of Point 1:</label>
+            <input type="number" id="easting1" name="easting1" required>
+        </div>
+        <div>
+            <label for="northing1">Northing of Point 1:</label>
+            <input type="number" id="northing1" name="northing1" required>
+        </div>
+        <div>
+            <label for="easting2">Easting of Point 2:</label>
+            <input type="number" id="easting2" name="easting2" required>
+        </div>
+        <div>
+            <label for="northing2">Northing of Point 2:</label>
+            <input type="number" id="northing2" name="northing2" required>
+        </div>
+        <div>
+            <label for="stations">Number of Stations:</label>
+            <input type="number" id="stations" name="stations" min="3" required>
+        </div>
+        <button type="button" class="btn" onclick="generateTable()">Generate Table</button>
+    </form>
+</div>
+
+<!-- Table Section -->
+<div class="container" id="tableContainer" style="display:none;">
+    <h2>Traverse Computation Form</h2>
+    <table id="traverseTable">
+        <thead>
+            <tr>
+                <th>Station</th>
+                <th>Observed Angle (°)</th>
+                <th>Corrected Angle (°)</th>
+                <th>Bearing (WCB)</th>
+                <th>Distance (d)</th>
+                <th>Easting (ΔE)</th>
+                <th>Northing (ΔN)</th>
+                <th>Easting with Correction</th>
+                <th>Northing with Correction</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <button type="button" class="btn" onclick="performCalculation()">Perform Calculation</button>
+</div>
+<!-- Result Section -->
+<div id="resultSection" style="display: none;">
+    <h2>Computation Results</h2>
+    <p id="closingError"></p>
+    <p id="closingErrorDirection"></p>
+    <p id="accuracy"></p>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
